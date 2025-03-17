@@ -86,11 +86,31 @@ export default function Home() {
               <>
                 <div className="mb-8 bg-white shadow rounded p-6">
                   <h2 className="text-xl font-bold mb-4">Instructions</h2>
-                  <ol className="list-decimal pl-6 space-y-2">
-                    <li>Upload HTML files containing your Warhammer 40K army lists</li>
-                    <li>Give each army a name to help identify it</li>
-                    <li>Once you&apos;ve uploaded two army lists, you can compare them side by side</li>
-                    <li>Use the damage calculator to predict combat outcomes between units</li>
+                  <ol className="list-decimal pl-6 space-y-4">
+                    <li className="flex flex-col gap-2">
+                      <a href='https://www.newrecruit.eu/app/MyLists' target='_blank' className="text-blue-600 hover:text-blue-800 hover:underline">Create your list with New Recruit</a>
+                    </li>
+                    <li className="flex flex-col gap-2">
+                      <div>Export your list once its done</div>
+                      <div className="w-full flex">
+                        <img src="/images/list.png" alt="Export your list" className="rounded shadow h-40 object-contain" />
+                      </div>
+                    </li>
+                    <li className="flex flex-col gap-2">
+                      <div>Export it as HTML file</div>
+                      <div className="w-full flex">
+                        <img src="/images/template.png" alt="Export as HTML" className="rounded shadow h-40 object-contain" />
+                      </div>
+                    </li>
+                    <li className="flex flex-col gap-2">
+                      <div>Only print you units card and save your file</div>
+                      <div className="w-full flex">
+                        <img src="/images/card.png" alt="Print units card" className="rounded shadow h-40 object-contain" />
+                      </div>
+                    </li>
+                    <li className="flex flex-col gap-2">
+                      <div>Upload your two lists</div>
+                    </li>
                   </ol>
                 </div>
 
