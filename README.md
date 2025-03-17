@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Warhammer 40K Army List Comparison Tool
+
+A web application for comparing two Warhammer 40K army lists side by side. This tool allows players to upload their army lists in HTML format and view detailed information about each unit, including profiles, weapons, abilities, and rules.
+
+## Features
+
+- Upload and parse Warhammer 40K army lists in HTML format
+- Side-by-side comparison of two army lists
+- Detailed unit cards with complete stat profiles
+- Search functionality to find specific units, weapons, or abilities
+- Highlight units for easier comparison
+- Responsive design for both desktop and mobile devices
+
+## Tech Stack
+
+- Next.js 14 (React framework)
+- TypeScript for type safety
+- Tailwind CSS for styling
+- HTML parsing logic for army list data
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18.17 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/warhammer-army-comparison.git
+cd warhammer-army-comparison
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. On the homepage, you'll find two upload areas for your army lists
+2. Upload HTML files or paste HTML content directly
+3. Enter names for each army to identify them
+4. Once both lists are loaded, they will be displayed side by side
+5. Use the search bar to find specific units, weapons, or abilities
+6. Click on unit cards to highlight them for easier comparison
 
-## Learn More
+## Data Format
 
-To learn more about Next.js, take a look at the following resources:
+The application expects Warhammer 40K army list data in an HTML format with specific class names and structure. The HTML should contain:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Units with class `.unit[type="card"]`
+- Unit names in `.name`
+- Unit costs in `.cost`
+- Unit profiles, weapons, abilities in appropriate sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Feel free to submit a pull request or open an issue.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Games Workshop for creating Warhammer 40,000
+- The Warhammer 40K community for their continued support
