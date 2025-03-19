@@ -29,8 +29,8 @@ A web application for comparing two Warhammer 40K army lists side by side. This 
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/warhammer-army-comparison.git
-cd warhammer-army-comparison
+git clone https://github.com/yourusername/list_collider.git
+cd list_collider
 ```
 
 2. Install dependencies
